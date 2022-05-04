@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-# Created by: Mr. Coxall
-# Created on: Oct 2019
+# Created by: Michael Clermont
+# Created on: May 2022
 # This program uses user defined functions
 
 
