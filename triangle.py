@@ -5,27 +5,34 @@
 # This program uses user defined functions
 
 
-def calculate_area(length, width):
+def calculate_area(base, height):
     # calculate area
 
     # process
-    area = (length * width) / 2
+    area = (base * height) / 2
 
     # output
     print("The area is {0} cm²".format(area))
-    print("\nDone.")
 
 
 def main():
     # this function gets length and width
 
     # input
-    base_from_user = int(input("Enter the base of a rectangle (cm): "))
-    height_from_user = int(input("Enter the height of a rectangle (cm): "))
+    base_from_user = input("Enter the base of a rectangle (cm): ")
+    height_from_user = input("Enter the height of a rectangle (cm): ")
     print("")
 
-    # call functions
-    calculate_area(base_from_user, height_from_user)
+    # process
+    try:
+        height_int = int(height_from_user)
+        base_int = int(base_from_user)
+        # call functions
+        calculate_area(base_int, height_int)
+    except Exception:
+        print("That is not an integer.")
+    finally:
+        print("\nDone.")
 
 
 if __name__ == "__main__":
