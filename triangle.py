@@ -19,8 +19,8 @@ def main():
     # this function gets length and width
 
     # input
-    base_from_user = input("Enter the base of a rectangle (cm): ")
-    height_from_user = input("Enter the height of a rectangle (cm): ")
+    base_from_user = input("Enter the base of a triangle (cm): ")
+    height_from_user = input("Enter the height of a triangle (cm): ")
     print("")
 
     # process
